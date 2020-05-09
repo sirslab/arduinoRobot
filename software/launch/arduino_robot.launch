@@ -1,0 +1,12 @@
+<launch>
+<include file="$(find mob_robots)/launch/usb_cam_two_arucos.launch" />
+
+<node name="bluetooth_proxy" pkg="mob_robots" type="bluetooth_proxy.py" respawn="false" output="screen" ></node>
+
+<node name="robot_positioning" pkg="mob_robots" type="robot_positioning.py" respawn="false" output="screen" ></node>
+
+<node name="robot_controller" pkg="mob_robots" type="robot_controller.py" respawn="false" output="screen" ></node>
+
+<node type="rviz" name="rviz" pkg="rviz" args="-d $(find mob_robots)/rviz/rviz.rviz"></node>
+
+</launch>
