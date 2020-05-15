@@ -43,7 +43,7 @@
 <param name="camera_frame" value="cam" />
 </node>
 
-<node name="aruco_tf2_broadcaster" pkg="mob_robots" type="aruco_tf2_broadcaster.py" respawn="false" output="screen" >
+<node name="aruco_tf2_broadcaster" pkg="arduino_robot" type="aruco_tf2_broadcaster.py" respawn="false" output="screen" >
 </node>
 
 </launch>

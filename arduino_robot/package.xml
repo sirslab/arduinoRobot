@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>mob_robots</name>
-  <version>0.1</version>
-  <description>The mob_robots package</description>
-
+  <name>arduino_robot</name>
+  <version>1.0.1</version>
+  <description>The arduino_robot package</description>
+  <license>GNU GENERAL PUBLIC LICENSE</license>
   <maintainer email="simone.marullo@student.unisi.it">Simone Marullo</maintainer>
 
   <buildtool_depend>catkin</buildtool_depend>

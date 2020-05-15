@@ -1,0 +1,12 @@
+<launch>
+<include file="$(find arduino_robot)/launch/usb_cam_two_arucos.launch" />
+
+<node name="bluetooth_proxy" pkg="arduino_robot" type="bluetooth_proxy.py" respawn="false" output="screen" ></node>
+
+<node name="robot_positioning" pkg="arduino_robot" type="robot_positioning.py" respawn="false" output="screen" ></node>
+
+<node name="robot_controller" pkg="arduino_robot" type="robot_controller.py" respawn="false" output="screen" ></node>
+
+<node type="rviz" name="rviz" pkg="rviz" args="-d $(find arduino_robot)/rviz/rviz.rviz"></node>
+
+</launch>

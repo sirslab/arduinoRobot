@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import rospy
-from mob_robots.msg import VectorStamped
+from arduino_robot.msg import VectorStamped
 import geometry_msgs.msg
 from geometry_msgs.msg import TransformStamped, PoseStamped
 from geometry_msgs.msg import Point
