@@ -22,7 +22,7 @@ length_error_threshold = 0.08 #meters
 sleep_time = 3.0 #seconds
 
 import rospy
-from mob_robots.msg import VectorStamped
+from arduino_robot.msg import VectorStamped
 
 from geometry_msgs.msg import TransformStamped, PoseStamped, Point, Pose, Quaternion, Vector3
 from std_msgs.msg import Header, ColorRGBA

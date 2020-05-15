@@ -2,7 +2,7 @@
 
 import serial
 import time
-from mob_robots.msg import VectorStamped
+from arduino_robot.msg import VectorStamped
 import rospy
 
 com = serial.Serial('/dev/rfcomm0',baudrate=9600, timeout = 3)
